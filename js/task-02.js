@@ -22,11 +22,11 @@ const logger = updatedUsers => console.table(updatedUsers);
 /*
  * Сейчас работает так
  */
-// console.log(toggleUserState(users, 'Mango', logger));
-// console.log(toggleUserState(users, 'Lux', logger));
+// toggleUserState(users, 'Mango', logger);
+// toggleUserState(users, 'Lux', logger);
 
 /*
  * Должно работать так
  */
-console.log(toggleUserState(users, 'Mango').then(logger));
-console.log(toggleUserState(users, 'Lux').then(logger));
+toggleUserState(users, 'Mango').then(logger);
+toggleUserState(users, 'Lux').then(logger);
